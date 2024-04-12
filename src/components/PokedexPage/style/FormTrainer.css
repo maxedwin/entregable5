@@ -1,0 +1,19 @@
+.button__form {
+    background-color: #D93F3F; /* Fondo rojo */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Espacio interno */
+    border: none; /* Elimina el borde */
+    border-radius: 0.2em; /* Esquinas redondeadas */
+    cursor: pointer; /* Indicador de cursor en hover */
+}
+.button__form:hover {
+    background-color: #DC1A1A;
+}
+
+.input__form {
+    height: 38px; /* Altura igual al botón */
+    padding: 10px; /* Espacio interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra gris */
+}
+

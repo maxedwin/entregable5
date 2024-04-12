@@ -1,0 +1,6 @@
+.list__pokemons {
+    display: flex;
+    flex-wrap: wrap; /* Permite salto de línea en varias filas */
+    justify-content: space-around;
+  }
+  

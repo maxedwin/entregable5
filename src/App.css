@@ -1,0 +1,46 @@
+
+.main__app {
+    position: absolute; /* Posicionar el artículo absolutamente */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrar desde el centro */
+}
+
+
+  
+  .footer__red {
+    position: absolute; /* Posicionamiento absoluto para el div rojo */
+    top: 0; /* Posición superior */
+    left: 0; /* Posición izquierda */
+    width: 100%; /* Ancho completo */
+    height: 50%; /* Altura del 50% */
+    background-color: red; /* Color rojo */
+  }
+  
+  .footer__black {
+    position: absolute; /* Posicionamiento absoluto para el div negro */
+    bottom: 0; /* Posición inferior */
+    left: 0; /* Posición izquierda */
+    width: 100%; /* Ancho completo */
+    height: 50%; /* Altura del 50% */
+    background-color: black; /* Color negro */
+  }
+  
+ 
+  
+  .footer {
+    height: 300px; /* Ajusta según tus preferencias */
+    position: relative; /* Para posicionar los círculos dentro del footer */
+  }
+  
+  .footer__container {
+    height: 100px; /* Proporciona espacio para los círculos */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra verticalmente los círculos dentro del contenedor */
+    position: absolute; /* Posiciona los círculos dentro del footer */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el contenedor dentro del footer */
+  }
+  

@@ -1,0 +1,120 @@
+.card {
+    width: 100%;
+    max-width: 25em;
+    border: 0.5em solid #ccc;
+    border-radius: 1em;
+    font-size: 1rem;
+    margin: 0.5em;
+}
+.card__header {
+    background-color: blueviolet;
+    width: 100%;
+    aspect-ratio: 2;
+    position: relative;
+    border-radius: 0.4em;
+}
+
+.card__img {
+    position: absolute;
+    width: 55%;
+    top: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card__principal {
+    margin-top: 3.5em;
+}
+
+.card__name {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 0.2em;
+}
+
+.card__types {
+    --gap-types: 0.7em;
+    display: flex;
+    justify-content: center;
+    gap: var(--gap-types);
+
+}
+
+.card__type:not(:nth-child(1))::before {
+    content: '/';
+    padding-right: var(--gap-types);
+
+}
+
+.card__hr{
+    --margin-y: 1em;
+    margin-top: var(--margin-y);
+    margin-bottom: var(--margin-y);
+    border-top: 1px solid #ccc;
+    margin-inline: 2em;
+
+
+}
+.card__stats {
+    padding: 1em 1em 2em;
+}
+
+.card__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 1.5em;
+}
+
+.card__stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3em;
+}
+.card__stat__label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+.card__stat_value {
+    font-size: 1.3rem;
+    font-weight: 300;
+
+}
+
+.bg-grass {
+    background: linear-gradient(178.92deg, #7ec6c5 0.92%, #abdac6 47.96%, #cae099 99.08%) green
+}
+.bg-fire {
+    background: red;
+}
+
+.bg-water {
+    background: blue;
+}
+
+.color-electric{
+    color: goldenrod;
+
+}
+
+.color-water {
+    color:blue;
+
+}
+
+.color-fire {
+    color:red
+
+}
+
+.color-grass {
+    color:green
+
+}
+
+.border-grass {
+    border-color: green;
+}
