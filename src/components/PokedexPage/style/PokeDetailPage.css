@@ -1,0 +1,100 @@
+.card__pokedetail {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 3em;
+}
+.banner {
+    width: 100%; /* Ancho completo del banner */
+    height: 150px; /* Altura del banner (ajustar según se desee) */
+    background-image: url('../../../images/banner.png') ; /* URL de la imagen */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+    margin-bottom: 7em;
+  }
+
+
+.h__stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.h__stats > div {
+    text-align: center;
+}
+
+.id__card {
+    padding-top: 0.5em;
+}
+
+.header__detailpoke {
+    text-align: center;
+    position: relative; /* Añade posición relativa para que la imagen sea relativa a este contenedor */
+    margin-top: 2em;
+    padding-top: 1em;
+}
+
+.header__detailpoke img {
+    max-width: 50%; /* La imagen tendrá un ancho del 50% en relación con su contenedor */
+    height: auto;
+    position: absolute; /* La posición absoluta permite que la imagen se superponga a otros elementos */
+    top: -50%; /* La mitad de la altura del contenedor */
+    left: 50%; /* La mitad del ancho del contenedor */
+    transform: translate(-50%, -50%); /* Centra la imagen horizontal y verticalmente */
+}
+
+
+
+.stats-container {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos en los extremos */
+    width: 100%;
+    padding-top: 1em;
+}
+
+
+.label__stats {
+    align-self: flex-start; /* Alinea este elemento al inicio del eje principal */
+}
+
+.label__value_stats {
+    align-self: flex-end; /* Alinea este elemento al final del eje principal */
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea los elementos al inicio del eje transversal */
+}
+
+.contenedor-barra-progreso {
+    width: 100%; /* Ancho del contenedor */
+    height: 20px; /* Altura de la barra de progreso */
+    background-color: #ccc; /* Color de fondo del contenedor */
+    border-radius: 0.2em; /* Bordes redondeados */
+    
+  }
+
+  .barra-progreso{
+    height: 100%; /* Altura completa del contenedor */
+    background: linear-gradient(to right, #FCD572, #ECA232); /* Degradado horizontal de amarillo a amarillo más claro */
+    transition: width 0.5s ease; /* Animación suave */
+    border-radius: 0.2em;
+  }
+  
+  
+
+  .valor-progreso {
+    position: absolute; /* Posicionar el texto dentro de la barra */
+    top: 0%; /* Alinear verticalmente en el centro */
+    left: 0; /* Alinear horizontalmente a la izquierda */
+    transform: translateY(-50%); /* Centrar verticalmente */
+    color: #fff; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 14px; /* Tamaño de fuente */
+   
+  }

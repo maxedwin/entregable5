@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import ListPokemons from "../components/PokedexPage/ListPokemons"
 import PokeCard from "../components/PokedexPage/PokeCard"
 import SelectType from "../components/PokedexPage/SelectType"
+import '../components/PokedexPage/style/FormTrainer.css'
 
 const PokedexPage = () => {
 
@@ -37,8 +38,8 @@ const PokedexPage = () => {
         return poke.name.includes(pokeSearch)
     })
   return (
-    <div>
-        <p>Welcome <span>{trainer}</span>, here you can find your favorite Pokemon</p>
+    <div className="container__pokedexPage">
+        <p><span className="span__welcome">Welconme {trainer}</span>, here you can find your favorite Pokemon</p>
         <form onSubmit={handleSubmit}>
             <input ref={inputSearch} type="text" />
             <button>Search</button>

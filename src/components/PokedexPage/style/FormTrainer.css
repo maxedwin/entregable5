@@ -15,5 +15,15 @@
     padding: 10px; /* Espacio interno */
     border: 1px solid #ccc; /* Borde gris claro */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra gris */
+    width: 200px;
+}
+
+.span__welcome {
+    color: #FD2A45;
+}
+
+.container__pokedexPage {
+    margin-top: 2em;
+    padding: 1em 1em 1em 1em;
 }
 
